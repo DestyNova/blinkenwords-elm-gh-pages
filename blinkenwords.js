@@ -8355,7 +8355,7 @@ var _DestyNova$blinkenwords_elm$Main$step = function (model) {
 		{
 			position: A2(
 				_elm_lang$core$Basics$min,
-				_elm_lang$core$List$length(model.words) - model.wordSpan,
+				_elm_lang$core$List$length(model.words) - 1,
 				model.position + model.wordSpan)
 		});
 };
@@ -8389,7 +8389,14 @@ var _DestyNova$blinkenwords_elm$Main$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		_elm_lang$core$Native_List.fromArray(
-			[]),
+			[
+				_elm_lang$html$Html_Attributes$style(
+				_elm_lang$core$Native_List.fromArray(
+					[
+						{ctor: '_Tuple2', _0: 'margin', _1: '0 auto'},
+						{ctor: '_Tuple2', _0: 'maxWidth', _1: '50em'}
+					]))
+			]),
 		_elm_lang$core$Native_List.fromArray(
 			[
 				A2(
@@ -8608,7 +8615,7 @@ var _DestyNova$blinkenwords_elm$Main$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{
-							position: A2(_elm_lang$core$Basics$max, 100, model.wpm - 5)
+							wpm: A2(_elm_lang$core$Basics$max, 100, model.wpm - 5)
 						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
@@ -8618,7 +8625,7 @@ var _DestyNova$blinkenwords_elm$Main$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{
-							position: A2(_elm_lang$core$Basics$min, 1000, model.wpm + 5)
+							wpm: A2(_elm_lang$core$Basics$min, 1000, model.wpm + 5)
 						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
