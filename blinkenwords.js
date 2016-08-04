@@ -8394,7 +8394,9 @@ var _DestyNova$blinkenwords_elm$Main$view = function (model) {
 				_elm_lang$core$Native_List.fromArray(
 					[
 						{ctor: '_Tuple2', _0: 'margin', _1: '0 auto'},
-						{ctor: '_Tuple2', _0: 'maxWidth', _1: '50em'}
+						{ctor: '_Tuple2', _0: 'maxWidth', _1: '50em'},
+						{ctor: '_Tuple2', _0: 'fontFamily', _1: '\'Helvetica\', \'Arial\', \'sans-serif\''},
+						{ctor: '_Tuple2', _0: 'textAlign', _1: 'center'}
 					]))
 			]),
 		_elm_lang$core$Native_List.fromArray(
@@ -8502,10 +8504,10 @@ var _DestyNova$blinkenwords_elm$Main$view = function (model) {
 						_elm_lang$html$Html_Attributes$style(
 						_elm_lang$core$Native_List.fromArray(
 							[
-								{ctor: '_Tuple2', _0: 'textAlign', _1: 'center'},
 								{ctor: '_Tuple2', _0: 'color', _1: 'red'},
 								{ctor: '_Tuple2', _0: 'backgroundColor', _1: 'cornsilk'},
-								{ctor: '_Tuple2', _0: 'lineHeight', _1: '150%'}
+								{ctor: '_Tuple2', _0: 'lineHeight', _1: '150%'},
+								{ctor: '_Tuple2', _0: 'margin', _1: '0.5em'}
 							])),
 						_elm_lang$html$Html_Events$onClick(_DestyNova$blinkenwords_elm$Main$Pause)
 					]),
